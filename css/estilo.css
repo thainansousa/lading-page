@@ -480,7 +480,7 @@ footer{
 @media screen and (max-width: 860px){
 	.section-services-flex .md-30 span{
 		float: left;
-		margin-top: 25px;
+		margin-top: -5px;
 	}
 	.section-services-flex .md-30{
 		width: 100%;
