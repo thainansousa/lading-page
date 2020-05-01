@@ -549,7 +549,7 @@ footer{
 		padding-top: 10px;
 	}
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 520px){
 	.section-services-flex p{
 		padding: 2%;
 	}
