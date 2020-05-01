@@ -408,53 +408,34 @@ html, body{
 footer{
 	width: 100%;
 }
-.rodape{
-	width: 100%;
-	display: flex;
-	color: #f3f3f3;
+.section-rodape{
 	background-color: #111;
-	padding: 10px;
-}
-
-.rodape .rodape-30{
-	width: calc(100% / 3);
-}
-.rodape-30{
-	border-top: 0;
-	border-left: 0;
-	border-bottom: 0;
-	border-right: 1px;
-	border-style: solid;
-	border-color: rgba(153, 153, 153, 0.1);
-}
-.rodape-30:last-child{
-	border: none;
-}
-.rodape .rodape-30 p{
-	margin-bottom: 5px;
-	padding: 10px;
-}
-.rodape .rodape-30 p:nth-of-type(1){
-	font-size: 18px;
-}
-.rodape .rodape-30 p:nth-of-type(1){
+	color: #fff;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
 	text-align: center;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 1px;
 }
 
-.rodape .rodape-30 p a{
-	color: #f3f3f3;
-	text-decoration: underline;
+.section-rodape a{
+	color: #fff;
 }
-.rodape .rodape-30 img{
-	padding: 10px;
-	margin-top: -5px;
-	float: left;
+.section-rodape img{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.section-rodape div p:nth-of-type(1){
+	color: #3598db;
 }
 /*Fim footer*/
 
 /*Inicio responsive*/
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 1020px){
 	.banner-principal {
 		flex-direction: column;
 		height: auto;
@@ -464,20 +445,11 @@ footer{
 		width: 100%;
 		margin: 30px 0 30px 0;
 	}
-	.section-services-flex{
-		flex-direction: column;
-	}
-	.section-services-flex .md-30{
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	.section-services-flex .md-30 h2{
-		margin-top: 30px;
+	.section-services-flex .md-30 span{
+		float: none;
 	}
 	.section-our-environment-flex{
 		flex-direction: column;
-
 	}
 	.section-our-environment-flex .environment-30{
 		width: 100%;
@@ -494,49 +466,60 @@ footer{
 		flex-direction: column;
 	}
 	.outher .img-50{
-		width: 100%;
+		width: 96%;
 	}
 	.outher .txt-50{
 		width: 100%;
 	}
 }
-@media screen and (max-width: 680px){
-	.banner-principal .md-50 h1{
-		padding-left: 5%;
+@media screen and (max-width: 860px){
+	.section-services-flex .md-30 span{
+		float: left;
+		margin-top: -5px;
 	}
-	.banner-principal .md-50 p{
-		padding-left: 5%;
-		padding-right: 2%;
-	}
-	.banner-principal .md-50 a{
-		margin: 5%;
-	}
-	.section-services-flex .md-30 p{
-		padding: 3%;
-	}
-	.rodape{
-		flex-direction: column;
-
-	}
-	.rodape .rodape-30{
+	.section-services-flex .md-30{
 		width: 100%;
-		border:none;
+		padding: 2%;
 	}
-	.rodape .rodape-30 p{
-		text-align: center;
-	}
-	.rodape .rodape-30 img{
-		margin: 0 auto;
-		float: none;
-	}
-	.responsive{
-		display: flex;
+	.section-services-flex{
 		flex-direction: column;
-		align-items: center;
 	}
 }
-
-@media screen and (max-width: 580px){
+@media screen and (max-width: 700px){
+	.container{
+		flex-direction: column;
+	}
+	.md-30{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	.menu{
+		width: 100%;
+		text-align: center;
+	}
+	.banner-principal{
+		padding: 2%;
+	}
+	.banner-principal .md-50 h1, .banner-principal .md-50 p{
+		padding: 0;
+		margin: 0;
+	}
+	.banner-principal .md-50 a{
+		margin: 10px 0 0 0;
+	}
+	.md-50 .form{
+		width: 100%;
+	}
+	.md-50 .form p{
+		padding: 15px;
+	}
+	.section-services-flex{
+		padding: 2%;
+	}
+	.section-services-flex .md-30 h2{
+		text-align: left;
+	}
 	.section-our-environment-flex .environment-30 img{
 		width: 96%;
 		margin-top: 30px;
