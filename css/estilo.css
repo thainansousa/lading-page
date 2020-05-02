@@ -210,15 +210,17 @@ html, body{
 .section-services-flex{
 	display: flex;
 	width: 100%;
+	flex-wrap: wrap;
+	padding: 50px;
 }
 .section-services-flex .md-30{
 	width: calc(100% / 3);
-	padding: 50px;
+	padding: 20px;
 }
 
-.section-services-flex .md-30 span{
+.section-services-flex .md-30 i{
 	float: left;
-	font-size: 5em;
+	font-size: 4em;
 	color: #999999;
 	padding-right: 2%;
 	margin-top: 15px;
@@ -423,11 +425,17 @@ footer{
 .section-rodape a{
 	color: #fff;
 }
-.section-rodape img{
-	width: 30px;
-	height: 30px;
-	margin-right: 10px;
+.section-rodape i{
+	font-size: 30px;
+	margin-left: 10px;
 	margin-top: 5px;
+	cursor: pointer;
+}
+.section-rodape a:nth-of-type(1) i:hover{
+	color: #833AB4;
+}
+.section-rodape a:nth-of-type(2) i:hover{
+	color: #ccc;
 }
 .section-rodape p{
 	padding-top: 10px;
@@ -449,7 +457,7 @@ footer{
 		width: 100%;
 		margin: 30px 0 30px 0;
 	}
-	.section-services-flex .md-30 span{
+	.section-services-flex .md-30 i{
 		float: none;
 	}
 	.section-our-environment-flex{
@@ -478,7 +486,7 @@ footer{
 	}
 }
 @media screen and (max-width: 860px){
-	.section-services-flex .md-30 span{
+	.section-services-flex .md-30 i{
 		float: left;
 		margin-top: -5px;
 	}
@@ -525,6 +533,16 @@ footer{
 	.section-services-flex .md-30 h2{
 		text-align: left;
 	}
+	.section-services-flex .md-30:nth-of-type(2) i{
+		font-size: 5em;
+		margin-right: 3px;
+	}
+	.section-services-flex .md-30:nth-of-type(3) i{
+		font-size: 4.5em;
+	}
+	.section-services-flex .md-30:nth-of-type(5) i{
+		font-size: 6em;
+	}
 	.section-services-flex .md-30 p{
 		text-align: justify;
 	}
@@ -553,7 +571,7 @@ footer{
 	.section-services-flex p{
 		padding: 2%;
 	}
-	.section-services-flex .md-30 span{
+	.section-services-flex .md-30 i{
 		margin-top: 20px;
 	}
 	.banner-principal .md-50 h1{
