@@ -59,8 +59,40 @@ html, body{
 	color: #fff;
 	transition: 0.5s;
 }
+.menu-mobile{
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/bares.png);
+	cursor: pointer;
+	display: none;
+}
+.menu-mobile ul{
+	position: absolute;
+	top: 75px;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	display: none;
 
-
+}
+.menu-mobile ul li{
+	list-style: none;
+	text-align: center;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+.menu-mobile ul li:last-child{
+	margin-bottom: 10px;
+}
+.menu-mobile ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+.menu-mobile ul li a:hover{
+	color: #3598db;
+	transition: 0.5s;
+}
 /*Fim cabeçalho*/
 
 
@@ -167,10 +199,10 @@ html, body{
 }
 
 .md-50 .form span{
-	padding: 20px;
+	padding-left: 20px;
 	color: #999999;
 	font-size: 14px;
-	margin-top: 20px;
+	display: inline-block;
 }
 
 .md-50 .form input[type=submit]{
@@ -499,17 +531,17 @@ footer{
 	}
 }
 @media screen and (max-width: 700px){
+	/*.md-30{
+		width: 100%;
+		background-color: red;
+	}*/
 	.container{
-		flex-direction: column;
+		justify-content: space-between;
 	}
-	.md-30{
-		width: 100%;
-		display: inline-block;
-		text-align: center;
-	}
-	.menu{
-		width: 100%;
-		text-align: center;
+	.container i{
+		display: block;
+		text-align: right;
+		cursor: pointer;
 	}
 	.banner-principal{
 		padding: 2%;
@@ -566,7 +598,14 @@ footer{
 	footer p{
 		padding-top: 10px;
 	}
+	.menu{
+		display: none;
+	}
+	.menu-mobile{
+		display: block;
+	}
 }
+
 @media screen and (max-width: 520px){
 	.section-services-flex p{
 		padding: 2%;
