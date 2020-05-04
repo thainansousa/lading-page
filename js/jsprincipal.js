@@ -13,5 +13,5 @@ $(function(){
 		return false;
 	})
 
-
+	$('.md-50 .form input[name=telefone]').mask('(99) 99999-9999')
 });
