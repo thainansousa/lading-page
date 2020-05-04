@@ -14,4 +14,8 @@ $(function(){
 	})
 
 	$('.md-50 .form input[name=telefone]').mask('(99) 99999-9999')
+
+	$('.menu-mobile').click(function(){
+		$('.menu-mobile').find('ul').slideToggle()
+	})
 });
